@@ -39,8 +39,6 @@ class AddRecipeView extends View {
     });
     // this._parentEl.addEventListener('submit', this.toggleWindow.bind(this));
   }
-
-  _generateMarkup() {}
 }
 
 export default new AddRecipeView();
