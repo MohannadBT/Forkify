@@ -21,6 +21,16 @@ class AddRecipeView extends View {
     this._window.classList.toggle('hidden');
   }
 
+  /**
+   * @todo check if window is closed if not close it
+   */
+  checkToggleWindow() {
+    if (!this._overlay.classList.contains('hidden')) {
+      this._overlay.classList.toggle('hidden');
+      this._window.classList.toggle('hidden');
+    }
+  }
+
   _addHandlerShowWindow() {
     this._btnOpen.addEventListener('click', this.toggleWindow.bind(this));
   }
